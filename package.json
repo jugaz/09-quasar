@@ -6,8 +6,10 @@
   "author": "Jesús Ugaz Vegas <jesusugazv@gmail.com>",
   "private": true,
   "scripts": {
+    "dev": "quasar dev",
     "lint": "eslint --ext .js,.vue ./",
     "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "prod": "quasar build",
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
