@@ -6,7 +6,7 @@
           flat
           dense
           round
-          icon="menu"
+          icon="las la-hamburger"
           aria-label="Menu"
           @click="toggleLeftDrawer"
         />

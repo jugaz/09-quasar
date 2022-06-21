@@ -2,18 +2,19 @@ const routes = [
   {
     path: "/",
     component: () => import("layouts/MainLayout.vue"),
-    children: [{ path: "", component: () => import("pages/IndexPage.vue") }],
-  },
-  {
-    path: "typography",
-    name: "typography",
-    component: () => import("pages/Typography.vue"),
-  },
-
-  {
-    path: "flex",
-    name: "flex",
-    component: () => import("pages/Flex.vue"),
+    children: [
+      { path: "", name: "", component: () => import("pages/IndexPage.vue") },
+      {
+        path: "typography",
+        name: "typography",
+        component: () => import("pages/Typography.vue"),
+      },
+      {
+        path: "flex",
+        name: "flex",
+        component: () => import("pages/flex.vue"),
+      },
+    ],
   },
 
   // Always leave this as last one,
