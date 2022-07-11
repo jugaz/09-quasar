@@ -12,7 +12,19 @@ const routes = [
       {
         path: "flex",
         name: "flex",
-        component: () => import("pages/flex.vue"),
+        component: () => import("pages/Flex.vue"),
+      },
+
+      {
+        path: "dialogs",
+        name: "dialogs",
+        component: () => import("pages/Dialogs.vue"),
+      },
+
+      {
+        path: "forms",
+        name: "forms",
+        component: () => import("pages/Forms.vue"),
       },
     ],
   },
